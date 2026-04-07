@@ -1,5 +1,5 @@
 .page-shell {
-  padding: 32px 32px 72px;
+  padding: 0;
 }
 
 .topbar {
@@ -7,7 +7,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 30;
   margin-bottom: 48px;
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 249, 240, 0.84);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 40px rgba(104, 73, 42, 0.08);
 }
 
 .brand {
@@ -32,6 +40,7 @@
 .nav a {
   color: var(--text);
   text-decoration: none;
+  font-weight: 600;
   transition: color 0.25s ease, transform 0.25s ease;
 }
 
@@ -46,6 +55,11 @@
   gap: 28px;
   align-items: stretch;
   margin-bottom: 32px;
+  padding: 0 32px;
+}
+
+.section-block {
+  scroll-margin-top: 140px;
 }
 
 .hero-copy,
@@ -88,6 +102,27 @@
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 28px;
+}
+
+.hero-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.hero-links a {
+  color: var(--text-h);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px;
+  max-width: 440px;
 }
 
 .button {
@@ -137,7 +172,10 @@
 
 .metric-grid,
 .project-grid,
-.about-grid {
+.about-grid,
+.skills-grid,
+.profiles-grid,
+.experience-list {
   display: grid;
   gap: 18px;
 }
@@ -168,11 +206,62 @@
 
 .content-section {
   margin-top: 56px;
+  padding: 0 32px;
+}
+
+.experience-list {
+  grid-template-columns: 1fr;
+}
+
+.experience-card,
+.profile-card {
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.experience-period {
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--text-h);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.experience-context {
+  margin-top: 14px;
+}
+
+.experience-highlights,
+.project-highlights {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--text);
+}
+
+.experience-highlights li,
+.project-highlights li {
+  margin-top: 10px;
 }
 
 .section-heading {
   max-width: 52rem;
   margin-bottom: 22px;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .about-grid {
@@ -220,6 +309,20 @@
     var(--panel);
 }
 
+.profiles-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-link {
+  align-self: flex-start;
+}
+
 .project-topline {
   margin-bottom: 18px;
 }
@@ -248,9 +351,52 @@
     var(--panel-strong);
 }
 
+.site-footer {
+  position: relative;
+  margin: 56px 0 0;
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+  background: rgba(255, 249, 240, 0.9);
+  box-shadow: 0 -10px 24px rgba(104, 73, 42, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-copy {
+  color: var(--text-h);
+  font-weight: 700;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 @media (max-width: 960px) {
   .page-shell {
-    padding: 20px 18px 48px;
+    padding: 0;
   }
 
   .topbar,
@@ -262,20 +408,55 @@
     flex-direction: column;
   }
 
+  .topbar {
+    top: 0;
+    align-items: flex-start;
+    padding: 16px 18px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
   .hero-copy {
     padding: 32px 24px;
+  }
+
+  .hero-section,
+  .content-section {
+    padding: 0 18px;
+  }
+
+  .site-footer {
+    margin: 56px 0 0;
+    padding: 18px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-card,
   .panel,
   .project-card,
   .timeline-item,
-  .contact-section {
+  .contact-section,
+  .experience-card,
+  .profile-card {
     padding: 24px;
   }
 
+  .contact-links-grid {
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
   .metric-grid,
-  .project-grid {
+  .project-grid,
+  .skills-grid,
+  .profiles-grid {
     grid-template-columns: 1fr;
   }
 }
