@@ -1,0 +1,83 @@
+:root {
+  --bg: #f4efe7;
+  --panel: rgba(255, 251, 245, 0.82);
+  --panel-strong: rgba(255, 249, 240, 0.92);
+  --text: #5f5448;
+  --text-h: #1f1a17;
+  --muted: #8a7462;
+  --border: rgba(95, 77, 59, 0.14);
+  --border-strong: rgba(95, 77, 59, 0.28);
+  --accent: #f56536;
+  --accent-strong: #d9485f;
+  --chip: rgba(245, 101, 54, 0.12);
+  --shadow: 0 24px 60px rgba(104, 73, 42, 0.11);
+  --sans: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --heading: Georgia, 'Times New Roman', serif;
+
+  font: 17px/1.6 var(--sans);
+  letter-spacing: 0.01em;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(245, 101, 54, 0.14), transparent 22%),
+    radial-gradient(circle at right center, rgba(15, 118, 110, 0.12), transparent 18%),
+    linear-gradient(180deg, #f7f2ea 0%, #efe4d6 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+  line-height: 1.08;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+}
+
+p {
+  margin: 0;
+}
