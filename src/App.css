@@ -299,7 +299,7 @@
 }
 
 .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .project-card {
@@ -307,6 +307,29 @@
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.88)),
     var(--panel);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin-top: 12px;
+}
+
+.project-meta span {
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .profiles-grid {

@@ -6,7 +6,7 @@ function CodingProfilesSection() {
     <section className="content-section section-block" id="profiles">
       <SectionHeading
         eyebrow="Coding profiles"
-        title="Problem-solving practice that supports interview readiness and core fundamentals"
+        title="Master problem solving for interviews and real-world coding"
       />
 
       <div className="profiles-grid">

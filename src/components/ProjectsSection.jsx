@@ -13,19 +13,27 @@ function ProjectsSection() {
         {projects.map((project) => (
           <article className="project-card" key={project.title}>
             <div className="project-topline">
-              <span>{project.tag}</span>
+              <h3>{project.tag}</h3>
             </div>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <ul className="project-highlights">
-              {project.highlights.map((highlight) => (
-                <li key={highlight}>{highlight}</li>
-              ))}
-            </ul>
-            <div className="stack-list">
-              {project.stack.map((item) => (
-                <span key={item}>{item}</span>
-              ))}
+            <div >
+              <div>
+                <h4>{project.title}</h4>
+                {/* <div className="project-meta">
+                  <span>Team Size: {project.teamSize}</span>
+                  <span>Duration: {project.duration}</span>
+                </div> */}
+                <p>{project.description}</p>
+                <ul className="project-highlights">
+                  {project.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="stack-list">
+                {project.stack.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
             </div>
           </article>
         ))}

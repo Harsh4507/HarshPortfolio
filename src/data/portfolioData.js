@@ -24,89 +24,111 @@ export const heroLinks = [
 
 export const experience = [
   {
-    role: '.NET Developer',
-    company: 'Current / Recent Company',
-    period: '2024 - Present',
+    role: 'Software Engineer',
+    company: 'Grazitti Interactive',
+    period: 'Apr 2024 - Apr 2026',
     context:
-      'Working on backend modules and business APIs for production applications used by internal teams and end users.',
-    stack: ['.NET', 'C#', 'ASP.NET Core', 'Web API', 'SQL Server', 'Git'],
+      'Full-stack software engineer with 2+ years of experience developing scalable applications using ASP.NET Core, Web APIs, Blazor, and SQL Server. Delivered end-to-end features including RESTful services, responsive UI, and real-time communication using SignalR. Focused on clean architecture, maintainability, and performance optimization across both backend and database layers.',
+    stack: ['C#', 'ASP.NET Core', 'Web APIs', 'MVC', 'Reactjs', 'BlazorUI', 'SQL Server', 'Javascript', 'JQuery', 'Postman', 'Git', 'Azure Devops', 'Azure'],
     highlights: [
-      'Built and maintained REST APIs for core business workflows, focusing on reliable backend behavior and clean endpoint design.',
-      'Wrote SQL queries and handled database integration for data-heavy features, reporting flows, and day-to-day bug fixes.',
-      'Collaborated with frontend, QA, and senior developers to ship new features, resolve issues, and support production releases.',
-      'Contributed to debugging, code maintenance, and feature delivery in an existing application codebase rather than only greenfield work.',
+      'Developed and scaled backend services using ASP.NET Core and Web APIs, supporting critical business functionalities.',
+      'Architected modular components following clean architecture and CQRS patterns for better maintainability and scalability.',
+      'Integrated SQL Server with EF Core and Dapper, optimizing queries for performance-critical operations.',
+      'Built real-time features using SignalR for live updates and improved user experience.',
+      'Worked closely with cross-functional teams to deliver production-ready features and resolve system issues efficiently.',
     ],
   },
   {
     role: 'Software Developer Intern',
-    company: 'Internship Company',
-    period: '2023 - 2024',
+    company: 'Grazitti Interactive',
+    period: 'Oct 2023 - Mar 2024',
     context:
-      'Completed a 6-month internship focused on learning team workflows, backend development practices, and real project delivery.',
-    stack: ['C#', 'ASP.NET', 'SQL', 'Postman', 'Git'],
+      'Software Developer Intern with hands-on experience in backend development using ASP.NET and SQL Server. Contributed to API development, database operations, and testing workflows while gaining exposure to production-grade coding standards and collaborative team environments.',
+    stack: ['C#', 'ASP.NET Core', 'Web APIs', 'MVC', 'SQL Server', 'Postman', 'Git'],
     highlights: [
-      'Supported API development, testing, and bug fixing tasks while learning production coding standards and team collaboration.',
-      'Worked on backend modules and database operations under mentorship, building confidence in real-world application development.',
-      'Used tools like Postman, Git, and SQL queries to validate changes and understand how features moved from development to testing.',
+      'Developed and tested RESTful API endpoints under guidance, ensuring correctness and maintainability.',
+      'Implemented database queries and assisted in backend logic development for feature enhancements.',
+      'Identified and fixed bugs in existing modules, contributing to improved system reliability.',
+      'Utilized Postman for API validation and Git for version control within a collaborative development environment.',
+      'Gained practical experience with real-world development workflows, including debugging, testing, and release cycles.',
     ],
   },
 ]
 
 export const projects = [
   {
-    title: 'Enterprise Workflow API',
-    tag: 'Professional Style',
+    title: '.NET Full Stack Developer',
+    tag: 'DCGONE – Enterprise Portal (Multiple Modules) | (Aug 25 – Apr 26) ',
+    teamSize: '5 members',
+    duration: 'Oct 2024 - Mar 2026',
     description:
-      'A backend-focused project demonstrating clean API structure, layered architecture, and database-backed business workflows.',
-    stack: ['ASP.NET Core', 'C#', 'SQL Server', 'Swagger'],
+      'A full-stack enterprise portal featuring modular architecture, clean API design, and scalable backend workflows. Built using ASP.NET Core MVC and Web APIs with CQRS-based separation of concerns and optimized SQL Server performance.',
+    stack: ['ASP.NET Core','MVC','Web APIs','Blazor UI','JavaScript','jQuery','SQL Server','JWT Authentication',
+  'Dependency Injection','Middleware','Git','Azure DevOps','Azure','Postman','Swagger','Unit Testing'
+],
     highlights: [
-      'Designed endpoints for CRUD, filtering, and workflow-oriented actions.',
-      'Used structured service and repository layers to keep the code maintainable.',
-      'Documented and tested APIs for easier frontend and QA integration.',
+      'Developed and enhanced full-stack features using ASP.NET MVC and Web API, following the CQRS pattern for separating read and write operations.',
+      'Built Compliance & Offer module using MVC and SQL Server, optimizing queries for performance.',
     ],
   },
   {
-    title: 'Employee Management System',
-    tag: 'Full Stack',
+    title: 'Dotnet Developer',
+    tag: 'DLOOP – User Management | (Jan 25 – Jul 25) ',
+    teamSize: '3 members',
+    duration: 'Jun 2024 - Sep 2024',
     description:
-      'A practical application for managing employee data, roles, and records with a clean UI and backend validation.',
-    stack: ['.NET', 'C#', 'SQL Server', 'HTML/CSS/JS'],
+      'A backend-focused user management system implementing secure and scalable APIs using ASP.NET Core and SQL Server. Designed with CQRS and MediatR to handle user workflows, authentication, and role-based access control.',
+   stack: ['ASP.NET Core','Web APIs','Reactjs','SQL Server','JWT Authentication','2FA Authentication','RBAC',
+  'Dependency Injection','Middleware','Identity','Git','Azure DevOps','Azure','Postman','Swagger','Unit Testing'],
     highlights: [
-      'Implemented authentication-ready backend flows and validation handling.',
-      'Connected UI screens with backend APIs and database records.',
-      'Focused on business use cases instead of only demo-level interfaces.',
+      'Developed secure RESTful APIs for user management using CQRS with MediatR, including authentication, authorization, RBAC, and 2FA.',
+      'Optimized SQL Server procedures, wrote xUnit unit tests, and improved API performance.',
     ],
   },
   {
-    title: 'Personal Portfolio Website',
-    tag: 'Personal Brand',
+    title: '.NET Full Stack Developer',
+    tag: 'H&R Block – Enterprise Tax Module | (Apr 24 – Jan 25) ',
+    teamSize: 'Solo project',
+    duration: 'Apr 2026 - Apr 2026',
     description:
-      'A recruiter-focused portfolio designed to present professional experience, selected projects, coding profiles, and contact details clearly.',
-    stack: ['React', 'Vite', 'CSS'],
+      'Contributed to enterprise-level tax workflow modules by developing scalable full-stack features using ASP.NET Core APIs and Blazor UI, focusing on clean architecture and efficient data handling.',
+    stack: ['ASP.NET Core','Web APIs','Blazor UI','SQL Server',
+      'Dependency Injection','Git','Azure DevOps','Azure','Azure Functions','Postman','Swagger','Unit Testing','Component Testing'],
     highlights: [
-      'Structured around recruiter-first sections such as experience and projects.',
-      'Uses reusable components and polished spacing for a premium feel.',
-      'Acts as a central hub for GitHub, LinkedIn, and coding profiles.',
+      'Developed Blazor UI components and ASP.NET Core APIs for enterprise tax workflow modules.',
+      'Optimized SQL Server procedures and implemented Controller–Service–Repository layered architecture for clean, maintainable code.',
     ],
   },
 ]
 
 export const skillGroups = [
   {
-    title: 'Backend',
-    items: ['.NET', 'C#', 'ASP.NET Core', 'Web API', 'RESTful Services'],
+    title: 'Language',
+    items: ['C#', 'Java'],
   },
   {
-    title: 'Database',
-    items: ['SQL Server', 'LINQ', 'Entity Framework', 'Stored Procedures'],
+    title: 'Architecture',
+    items: ['Clean Architecture', 'CQRS', 'MediatR', 'Microservices'],
+  },
+  {
+    title: 'Backend',
+    items: ['.NET', 'ASP.NET Core', 'Web APIs', 'REST APIs', 'Dependency Injection', 'Middleware', 'SignalR'],
   },
   {
     title: 'Frontend',
-    items: ['HTML', 'CSS', 'JavaScript', 'React'],
+    items: ['Reactjs', 'HTML', 'CSS', 'JavaScript', 'JQuery', 'Blazor UI'],
+  },
+  {
+    title: 'DATA ACCESS',
+    items: ['SQL Server', 'EF Core', 'Dapper', 'LINQ', 'Stored Procedures'],
   },
   {
     title: 'Tools',
-    items: ['Git', 'GitHub', 'Postman', 'Swagger', 'Visual Studio'],
+    items: ['Git', 'GitHub', 'Azure Devops', 'Postman', 'Swagger', 'Visual Studio', 'VS Code'],
+  },
+  {
+    title: 'Unit Testing',
+    items: ['xUnit'],
   },
 ]
 
@@ -114,15 +136,15 @@ export const codingProfiles = [
   {
     title: 'LeetCode',
     description:
-      'Used for sharpening data structures, algorithms, and interview problem solving consistency.',
-    href: 'https://leetcode.com/u/your-leetcode-id/',
+      'Practice high-quality coding problems to improve algorithmic thinking and interview performance.',
+    href: 'https://leetcode.com/u/harsh4507/',
     cta: 'View Profile',
   },
   {
     title: 'GeeksforGeeks',
     description:
-      'Used for practice, concept revision, and strengthening problem-solving fundamentals.',
-    href: 'https://www.geeksforgeeks.org/user/your-gfg-id/',
+      'Revise fundamentals and deepen understanding with guided problems and concept-driven learning.',
+    href: 'https://www.geeksforgeeks.org/profile/harshrajput4507',
     cta: 'View Profile',
   },
 ]
