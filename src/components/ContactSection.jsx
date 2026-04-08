@@ -14,13 +14,17 @@ function ContactSection() {
 
       <div className="contact-links-grid">
         {contactLinks.map((link) => {
-          const isExternal = !link.href.startsWith('mailto:')
+          const isExternal = !link.href.startsWith('mailto:') && !link.download
+          const href = link.download
+            ? `${import.meta.env.BASE_URL}${link.href}`
+            : link.href
 
           return (
             <a
               key={link.label}
               className={`button button-${link.variant}`}
-              href={link.href}
+              href={href}
+              download={link.download}
               target={isExternal ? '_blank' : undefined}
               rel={isExternal ? 'noreferrer' : undefined}
             >

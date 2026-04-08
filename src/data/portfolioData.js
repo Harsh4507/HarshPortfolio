@@ -153,7 +153,7 @@ export const contactLinks = [
   {
     label: 'Email',
     href: 'mailto:harshrajput4507@gmail.com',
-    variant: 'primary',
+    variant: 'secondary',
   },
   {
     label: 'LinkedIn',

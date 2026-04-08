@@ -1,6 +1,8 @@
 import { heroLinks, metrics } from '../data/portfolioData'
 
 function HeroSection() {
+  const resumeHref = `${import.meta.env.BASE_URL}HarshResume.pdf`
+
   return (
     <section className="hero-section section-block" id="home">
       <div className="hero-copy">
@@ -14,6 +16,13 @@ function HeroSection() {
           </a>
           <a className="button button-secondary" href="#projects">
             View projects
+          </a>
+          <a
+            className="button button-secondary"
+            href={resumeHref}
+            download="Harsh-Rajput-Resume.pdf"
+          >
+            Download resume
           </a>
         </div>
       </div>
