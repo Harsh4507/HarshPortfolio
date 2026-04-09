@@ -204,9 +204,12 @@
 .metric-grid,
 .project-grid,
 .about-grid,
+.about-story,
 .skills-grid,
 .profiles-grid,
-.experience-list {
+.experience-list,
+.achievement-grid,
+.education-list {
   display: grid;
   gap: 18px;
 }
@@ -299,6 +302,11 @@
   grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
 }
 
+.about-story,
+.education-list {
+  grid-template-columns: 1fr;
+}
+
 .panel,
 .project-card,
 .timeline-item,
@@ -310,6 +318,39 @@
   min-height: 220px;
   display: flex;
   align-items: center;
+}
+
+.about-highlight-panel {
+  background:
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.92)),
+    var(--panel);
+}
+
+.about-highlight-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.about-highlight-item {
+  display: grid;
+  grid-template-columns: 12px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.about-highlight-item p {
+  margin: 0;
+}
+
+.about-highlight-dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  box-shadow: 0 0 0 6px rgba(245, 101, 54, 0.12);
 }
 
 .skill-list,
@@ -367,10 +408,51 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.achievement-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .profile-card {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.achievement-card,
+.education-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.achievement-card {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(245, 101, 54, 0.16), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.92)),
+    var(--panel);
+}
+
+.achievement-value {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  line-height: 1;
+  font-weight: 800;
+  color: var(--text-h);
+}
+
+.achievement-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .profile-link {
@@ -515,7 +597,8 @@
   .metric-grid,
   .project-grid,
   .skills-grid,
-  .profiles-grid {
+  .profiles-grid,
+  .achievement-grid {
     grid-template-columns: 1fr;
   }
 }

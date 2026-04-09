@@ -1,8 +1,30 @@
 export const navLinks = [
+  { href: '#about', label: 'About' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
   { href: '#skills', label: 'Skills' },
+  { href: '#achievements', label: 'Achievements' },
+  { href: '#education', label: 'Education' },
   { href: '#contact', label: 'Contact' },
+]
+
+export const aboutCards = [
+  {
+    title: 'Who I am',
+    description:
+      'I am a software engineer focused on building dependable backend systems and polished product experiences. My work sits at the intersection of API design, scalable architecture, and clean interfaces that help teams ship with confidence.',
+  },
+  {
+    title: 'What I bring',
+    description:
+      'I enjoy taking ownership of features end to end, from database and API design to front-end integration, testing, and production readiness. I care about clarity, maintainability, and solving business problems with practical engineering choices.',
+  },
+]
+
+export const aboutHighlights = [
+  '2+ years building production applications with ASP.NET Core and SQL Server',
+  'Hands-on delivery across APIs, Blazor, MVC flows, and real-time SignalR features',
+  'Comfortable collaborating across backend, database, and frontend responsibilities',
 ]
 
 export const metrics = [
@@ -29,7 +51,7 @@ export const experience = [
     period: 'Apr 2024 - Apr 2026',
     context:
       'Full-stack software engineer with 2+ years of experience developing scalable applications using ASP.NET Core, Web APIs, Blazor, and SQL Server. Delivered end-to-end features including RESTful services, responsive UI, and real-time communication using SignalR. Focused on clean architecture, maintainability, and performance optimization across both backend and database layers.',
-    stack: ['C#', 'ASP.NET Core', 'Web APIs', 'MVC', 'Reactjs', 'BlazorUI', 'SQL Server', 'Javascript', 'JQuery', 'Postman', 'Git', 'Azure Devops', 'Azure'],
+    stack: ['C#', 'ASP.NET Core', 'Web APIs', 'MVC', 'React', 'Blazor', 'SQL Server', 'Javascript', 'JQuery', 'Postman', 'Git', 'Azure DevOps', 'Azure'],
     highlights: [
       'Developed and scaled backend services using ASP.NET Core and Web APIs, supporting critical business functionalities.',
       'Architected modular components following clean architecture and CQRS patterns for better maintainability and scalability.',
@@ -63,8 +85,8 @@ export const projects = [
     duration: 'Oct 2024 - Mar 2026',
     description:
       'A full-stack enterprise portal featuring modular architecture, clean API design, and scalable backend workflows. Built using ASP.NET Core MVC and Web APIs with CQRS-based separation of concerns and optimized SQL Server performance.',
-    stack: ['ASP.NET Core','MVC','Web APIs','Blazor UI','JavaScript','jQuery','SQL Server','JWT Authentication',
-  'Dependency Injection','Middleware','Git','Azure DevOps','Azure','Postman','Swagger','Unit Testing'
+    stack: ['ASP.NET Core','MVC','Web APIs','Blazor','JavaScript','jQuery','SQL Server','Jira','JWT Authentication',
+  'Dependency Injection','Middleware','Git','Azure DevOps','Azure','Postman','Swagger','Unit Testing','Cursor'
 ],
     highlights: [
       'Developed and enhanced full-stack features using ASP.NET MVC and Web API, following the CQRS pattern for separating read and write operations.',
@@ -78,7 +100,7 @@ export const projects = [
     duration: 'Jun 2024 - Sep 2024',
     description:
       'A backend-focused user management system implementing secure and scalable APIs using ASP.NET Core and SQL Server. Designed with CQRS and MediatR to handle user workflows, authentication, and role-based access control.',
-   stack: ['ASP.NET Core','Web APIs','Reactjs','SQL Server','JWT Authentication','2FA Authentication','RBAC',
+   stack: ['ASP.NET Core','Web APIs','React','SQL Server','JWT Authentication','2FA Authentication','RBAC',
   'Dependency Injection','Middleware','Identity','Git','Azure DevOps','Azure','Postman','Swagger','Unit Testing'],
     highlights: [
       'Developed secure RESTful APIs for user management using CQRS with MediatR, including authentication, authorization, RBAC, and 2FA.',
@@ -91,11 +113,11 @@ export const projects = [
     teamSize: 'Solo project',
     duration: 'Apr 2026 - Apr 2026',
     description:
-      'Contributed to enterprise-level tax workflow modules by developing scalable full-stack features using ASP.NET Core APIs and Blazor UI, focusing on clean architecture and efficient data handling.',
-    stack: ['ASP.NET Core','Web APIs','Blazor UI','SQL Server',
+      'Contributed to enterprise-level tax workflow modules by developing scalable full-stack features using ASP.NET Core APIs and Blazor, focusing on clean architecture and efficient data handling.',
+    stack: ['ASP.NET Core','Web APIs','Blazor','SQL Server',
       'Dependency Injection','Git','Azure DevOps','Azure','Azure Functions','Postman','Swagger','Unit Testing','Component Testing'],
     highlights: [
-      'Developed Blazor UI components and ASP.NET Core APIs for enterprise tax workflow modules.',
+      'Developed Blazor components and ASP.NET Core APIs for enterprise tax workflow modules.',
       'Optimized SQL Server procedures and implemented Controller–Service–Repository layered architecture for clean, maintainable code.',
     ],
   },
@@ -112,24 +134,28 @@ export const skillGroups = [
   },
   {
     title: 'Backend',
-    items: ['.NET', 'ASP.NET Core', 'Web APIs', 'REST APIs', 'Dependency Injection', 'Middleware', 'SignalR'],
+    items: ['.NET', 'ASP.NET Core', 'Web APIs', 'REST APIs','Azure','JWT Authentication','Caching', 'Dependency Injection', 'Middleware', 'SignalR'],
   },
   {
     title: 'Frontend',
-    items: ['Reactjs', 'HTML', 'CSS', 'JavaScript', 'JQuery', 'Blazor UI'],
+    items: ['React', 'HTML', 'CSS', 'JavaScript', 'JQuery', 'Blazor'],
   },
   {
     title: 'DATA ACCESS',
     items: ['SQL Server', 'EF Core', 'Dapper', 'LINQ', 'Stored Procedures'],
   },
   {
-    title: 'Tools',
-    items: ['Git', 'GitHub', 'Azure Devops', 'Postman', 'Swagger', 'Visual Studio', 'VS Code'],
+    title: 'Unit Testing',
+    items: ['xUnit','Moq'],
   },
   {
-    title: 'Unit Testing',
-    items: ['xUnit'],
+    title: 'Tools',
+    items: ['Azure DevOps','Jira', 'Postman', 'Swagger','Git', 'GitHub', 'Visual Studio', 'VS Code'],
   },
+  //   {
+  //   title: 'AI Tools',
+  //   items: ['Cursor','Claude Code','Chat GPT'],
+  // },
 ]
 
 export const codingProfiles = [
@@ -146,6 +172,55 @@ export const codingProfiles = [
       'Revise fundamentals and deepen understanding with guided problems and concept-driven learning.',
     href: 'https://www.geeksforgeeks.org/profile/harshrajput4507',
     cta: 'View Profile',
+  },
+]
+
+export const achievements = [
+  {
+    value: '4',
+    label: 'Awards & Recognition',
+    description:
+      'Recognized three times as Star Performer of the Month at Grazitti Interactive and received the Quarterly Award for Delivery Ninja.',
+  },
+  {
+    value: '3',
+    label: 'Production Modules Delivered',
+    description:
+      'Contributed across DCGONE, DLOOP, and H&R Block modules with a focus on maintainable backend systems and practical feature delivery.',
+  },
+  {
+    value: '2+',
+    label: 'Years in Backend Development',
+    description:
+      'Built and maintained production-ready APIs, optimized SQL performance, and contributed to UI integration in collaborative environments.',
+  },
+  {
+    value: '200+',
+    label: 'DSA Problems Solved',
+    description:
+      'Continuously improving problem-solving skills through consistent practice on LeetCode and GeeksforGeeks.',
+    links: codingProfiles,
+  },
+]
+
+export const education = [
+  {
+    title: 'B.Tech in Computer Science Engineering | 8.73 CGPA | 2020–2024',
+    period: 'Maharishi Markandeshwar University, Mullana',
+    description:
+      'Built a strong base in programming fundamentals, object-oriented design, database systems, software engineering, and problem solving that now informs production work.',
+  },
+  {
+    title: 'Higher Secondary Education (12th Grade) | 79.5% | 2020',
+    period: 'Modern Era Public School, Bijnor (CBSE)',
+    description:
+      'Actively deepen knowledge through project execution, platform-based coding practice, and day-to-day exposure to architecture, APIs, testing, and performance tuning.',
+  },
+    {
+    title: 'Secondary Education (10th Grade) | 81% | 2018',
+    period: 'Modern Era Public School, Bijnor (CBSE)',
+    description:
+      'Actively deepen knowledge through project execution, platform-based coding practice, and day-to-day exposure to architecture, APIs, testing, and performance tuning.',
   },
 ]
 

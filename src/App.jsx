@@ -1,6 +1,8 @@
+import AboutSection from './components/AboutSection'
+import AchievementsSection from './components/AchievementsSection'
 import './App.css'
-import CodingProfilesSection from './components/CodingProfilesSection'
 import ContactSection from './components/ContactSection'
+import EducationSection from './components/EducationSection'
 import ExperienceSection from './components/ExperienceSection'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -15,10 +17,12 @@ function App() {
 
       <main>
         <HeroSection />
+        <AboutSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
-        <CodingProfilesSection />
+        <AchievementsSection />
+        <EducationSection />
         <ContactSection />
       </main>
       <Footer />
